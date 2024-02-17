@@ -5,8 +5,6 @@ export const getPopularAnimes = async (
   limit: number,
   page: number
 ): Promise<MediaInfo> => {
-  await new Promise((resolve) => setTimeout(resolve, 5000));
-
   const response = await fetch(
     `https://api.jikan.moe/v4/top/anime?limit=${limit}&page=${page}`
   );
