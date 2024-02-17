@@ -5,7 +5,6 @@ import { getSearchManga } from "../../../../functions/getMidia";
 import { MediaInfo } from "@/@types/MediaInfo";
 import { MidiaCard } from "../../../../components/MidiaCard";
 import { useRouter } from "next/navigation";
-import { Search } from "@mui/icons-material";
 import { CircularProgress } from "@mui/material";
 import { ButtonSearch } from "@/components/ButtonSearch";
 

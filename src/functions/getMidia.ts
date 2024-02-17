@@ -104,11 +104,7 @@ export const getSearchManga = async (search: string): Promise<MediaInfo> => {
 
   const searchManga = await response.json();
 
-  const filtredRx = searchManga.data.filter(
-    (manga: MediaInfo) => manga.rating !== "Rx - Hentai"
-  );
-
-  return filtredRx;
+  return searchManga.data;
 };
 
 export const getAnimeById = async (id: string | string[]): Promise<IdMidia> => {

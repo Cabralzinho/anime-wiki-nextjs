@@ -13,8 +13,6 @@ export default async function manga({
 
   const popularMangas = await getPopularMangas(12, page);
 
-  await new Promise((resolve) => setTimeout(resolve, 5000));
-
   return (
     <main className="flex flex-col gap-20">
       <div className="flex flex-col gap-10">
